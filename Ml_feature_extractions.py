@@ -56,15 +56,17 @@ def statistical_ml_features(signal_data: np.ndarray, n_components: int = 3) -> d
     }
     return features
 
-# Generate Sample Data
-t, ecg_signal = generate_sample_data()
 
-# Extract Features
-time_features = time_domain_features(ecg_signal)
-frequency_features = frequency_domain_features(ecg_signal)
-ml_features = statistical_ml_features(ecg_signal)
+if __name__ == "__main__":
+    # Generate Sample Data
+    t, ecg_signal = generate_sample_data()
 
-# Print Extracted Features
-print("Time-Domain Features:", time_features)
-print("Frequency-Domain Features:", frequency_features)
-print("Statistical & ML-Based Features:", ml_features)
+    # Extract Features
+    time_features = time_domain_features(ecg_signal)
+    frequency_features = frequency_domain_features(ecg_signal)
+    ml_features = statistical_ml_features(ecg_signal)
+
+    # Print Extracted Features
+    print("Time-Domain Features:", time_features)
+    print("Frequency-Domain Features:", frequency_features)
+    print("Statistical & ML-Based Features:", ml_features)
