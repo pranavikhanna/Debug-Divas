@@ -58,7 +58,20 @@ Frequency-Domain Features (via FFT)
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the repo
-```bash
+bash
+pip install -r requirements.txt
+
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+📈 Future Enhancements
+Add UI toggle to switch between Random Forest and SVM
+
+Integrate deep learning (CNN/LSTM) for raw signal learning
+
+Deploy mobile version
+
+Integrate real-time input from wearables (Apple Watch, Fitbit)
+
+Add SHAP for model interpretability
+
 
